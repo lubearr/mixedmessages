@@ -5,9 +5,28 @@ function generateRandomNumber(len) {
 
 // Create lists of options
 const data = {
-  genres: [1, 2, 3],
-  settings: [4, 5, 6],
-  themes: [7, 8, 9],
+  genres: [
+    'Romantic Comedy',
+    'Action Adventure',
+    'Slice of Life',
+    'Murder Mystery',
+    'Political Thriller',
+  ],
+  settings: [
+    'the Wild West',
+    'Space',
+    'Medieval England',
+    'Ancient China',
+    'Alabama',
+    'an isolated Alaskan town',
+  ],
+  themes: [
+    'coming of age',
+    'circle of life',
+    'technology in society',
+    'pursuit of love',
+    'sacrifice for love',
+  ],
 };
 
 // Generate and store randomized data
@@ -17,5 +36,10 @@ for (let content in data) {
 }
 
 console.log(randData);
+
+
+const genGenre = randData[0];
+const genSetting = randData[1];
+const genTheme = randData[2];
 
 // Log story prompt
