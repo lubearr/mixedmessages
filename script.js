@@ -45,5 +45,14 @@ const genGenre = randData[0];
 const genSetting = randData[1];
 const genTheme = randData[2];
 
+// Determine if genGenre starts with vowel and sets proper indefinite article
+let article = "";
+const vowels = ['a', 'e', 'i', 'o', 'u', 'y']
+if (vowels.includes(genGenre[0].toLowerCase())) {
+  article = "An";
+} else {
+  article = "A";
+}
+
 // Log story prompt
-console.log(`Story Prompt: A ${genGenre} set in ${genSetting} about ${genTheme}.`)
+console.log(`Story Prompt: ${article} ${genGenre} set in ${genSetting} about ${genTheme}.`)
