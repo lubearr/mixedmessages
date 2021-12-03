@@ -47,7 +47,7 @@ const genTheme = randData[2];
 
 // Determine if genGenre starts with vowel and sets proper indefinite article
 let article = "";
-const vowels = ['a', 'e', 'i', 'o', 'u', 'y']
+const vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
 if (vowels.includes(genGenre[0].toLowerCase())) {
   article = "An";
 } else {
