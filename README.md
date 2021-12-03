@@ -10,3 +10,6 @@ This is a project from Codecademy's Full Stack Engineer Path. The program genera
 - Use Git version control
 - Use command line
 - Develop locally on your computer
+
+## Launch
+Run "node script.js" in terminal.
