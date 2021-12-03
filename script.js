@@ -19,13 +19,19 @@ const data = {
     'Ancient China',
     'Alabama',
     'an isolated Alaskan town',
+    'Middle Earth',
+    'Soviet Russia',
   ],
   themes: [
     'coming of age',
-    'circle of life',
+    'the circle of life',
     'technology in society',
-    'pursuit of love',
+    'the pursuit of love',
     'sacrifice for love',
+    'revenge',
+    'courage and perserverance',
+    'the innocence of youth',
+    'the corruption of power',
   ],
 };
 
@@ -35,11 +41,9 @@ for (let content in data) {
   randData.push(data[content][generateRandomNumber(data[content].length)]);
 }
 
-console.log(randData);
-
-
 const genGenre = randData[0];
 const genSetting = randData[1];
 const genTheme = randData[2];
 
 // Log story prompt
+console.log(`Story Prompt: A ${genGenre} set in ${genSetting} about ${genTheme}.`)
