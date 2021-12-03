@@ -55,4 +55,4 @@ if (vowels.includes(genGenre[0].toLowerCase())) {
 }
 
 // Log story prompt
-console.log(`Story Prompt: ${article} ${genGenre} set in ${genSetting} about ${genTheme}.`)
+console.log(`Story Prompt: ${article} ${genGenre} set in ${genSetting} about ${genTheme}.`);
